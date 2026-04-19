@@ -259,6 +259,7 @@
                                 <a href="#products" onclick="filterProducts('gia-vi-hoan-chinh'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị hoàn chỉnh</a>
                                 <a href="#products" onclick="filterProducts('gia-vi-nau-uop'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị nấu & ướp</a>
                                 <a href="#products" onclick="filterProducts('sa-te'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Sa tế</a>
+                                <a href="#combo-gia-vi" onclick="filterProducts('combo-gia-vi'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Combo gia vị</a>
                             </div>
                         </div>
                     </div>
@@ -416,11 +417,11 @@
             <div class="relative glass rounded-3xl shadow-2xl p-5 w-[280px] promo-shine overflow-hidden">
                 <div class="relative z-10">
                     <div class="flex items-center justify-between mb-3">
-                        <span class="bg-gradient-to-r from-red-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md shadow-red-500/25">🔥 -44%</span>
+                        <span class="bg-gradient-to-r from-red-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md shadow-red-500/25">🔥 -30%</span>
                         <span class="text-[11px] text-gray-400 font-medium">Khuyến mãi</span>
                     </div>
                     <div class="relative rounded-2xl overflow-hidden mb-4 img-reveal">
-                        <img src="https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Xao-Chua-Ngot-Mat-Truoc.webp" alt="Xốt gia vị hoàn chỉnh Xào chua ngọt" class="w-full h-40 object-cover">
+                        <img src="https://salt.tikicdn.com/cache/320x320/ts/product/4d/d4/a7/610418e9828269c45855a94caa1052fb.jpg" alt="Combo gia vị muối sốt" class="w-full h-40 object-cover">
                         <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-3 flex items-center gap-0.5">
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
@@ -430,11 +431,11 @@
                             <span class="text-white/80 text-[11px] ml-1">4,9/5</span>
                         </div>
                     </div>
-                    <h4 class="font-bold text-forest-800 text-[15px] mb-0.5">Xốt gia vị Xào chua ngọt</h4>
-                    <p class="text-[11px] text-gray-400 mb-3">Gia vị đậm đà, cân bằng vị chua ngọt hoàn hảo cho mọi món xào tại gia.</p>
+                    <h4 class="font-bold text-forest-800 text-[15px] mb-0.5">Combo gia vị muối sốt</h4>
+                    <p class="text-[11px] text-gray-400 mb-3">Muối tôm Tây Ninh, muối tiêu lá chanh, muối ớt chanh Nha Trang, xốt ướp thịt BBQ.</p>
                     <div class="flex items-center gap-2 mb-4">
-                        <span class="text-gradient font-bold text-xl">13.899₫</span>
-                        <span class="text-gray-400 line-through text-sm">25.000₫</span>
+                        <span class="text-gradient font-bold text-xl">107.100₫</span>
+                        <span class="text-gray-400 line-through text-sm">153.000₫</span>
                     </div>
                     <button onclick="addToCart(1)" class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white py-3 rounded-2xl font-semibold transition-all shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 flex items-center justify-center gap-2 text-sm hover:translate-y-[-1px]">
                         <i data-lucide="shopping-bag" class="w-4 h-4"></i> Thêm vào giỏ
@@ -567,6 +568,7 @@
                     <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="gia-vi-hoan-chinh" onclick="filterProducts('gia-vi-hoan-chinh')">Gia vị hoàn chỉnh</button>
                     <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="gia-vi-nau-uop" onclick="filterProducts('gia-vi-nau-uop')">Gia vị nấu &amp; ướp</button>
                     <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="sa-te" onclick="filterProducts('sa-te')">Sa tế</button>
+                    <button type="button" id="combo-gia-vi" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0 scroll-mt-28" data-filter="combo-gia-vi" onclick="filterProducts('combo-gia-vi')">Combo gia vị</button>
                 </div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" id="products-grid">
@@ -584,32 +586,32 @@
     <section class="py-20 md:py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-5 fade-up">
-                <div class="relative rounded-3xl overflow-hidden h-64 md:h-80 group cursor-pointer">
-                    <img src="http://static.photos/food/640x360/7" alt="BBQ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <a href="#products" onclick="filterProducts('gia-vi-tu-nhien');" class="relative rounded-3xl overflow-hidden h-64 md:h-80 group cursor-pointer block">
+                    <img src="https://channel.mediacdn.vn/428462621602512896/2023/6/5/photo-3-16859368887631872684817.png" alt="Gia vị tự nhiên" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-r from-forest-900/85 via-forest-900/50 to-transparent"></div>
                     <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-center">
                         <span class="inline-flex items-center gap-1.5 text-primary-400 font-semibold text-xs uppercase tracking-wider mb-3 w-fit">
                             <span class="w-6 h-px bg-primary-400"></span> Bộ sưu tập mới
                         </span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white font-display leading-tight">Gia vị nướng<br>BBQ Premium</h3>
-                        <a href="#" class="group/link inline-flex items-center gap-1.5 text-primary-400 font-semibold mt-5 text-sm hover:text-primary-300 transition w-fit">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white font-display leading-tight">Gia vị tự nhiên –<br>Chuẩn vị Việt</h3>
+                        <span class="group/link inline-flex items-center gap-1.5 text-primary-400 font-semibold mt-5 text-sm hover:text-primary-300 transition w-fit">
                             Khám phá ngay <i data-lucide="arrow-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
-                        </a>
+                        </span>
                     </div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden h-64 md:h-80 group cursor-pointer">
-                    <img src="http://static.photos/nature/640x360/22" alt="Combo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </a>
+                <a href="#combo-gia-vi" onclick="filterProducts('combo-gia-vi'); return false;" class="relative rounded-3xl overflow-hidden h-64 md:h-80 group cursor-pointer block">
+                    <img src="https://photo.znews.vn/w660/Uploaded/wyhktpu/2022_01_05/IMG_9791.jpg" alt="Combo gia vị" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-r from-primary-900/85 via-primary-900/50 to-transparent"></div>
                     <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-center">
                         <span class="inline-flex items-center gap-1.5 text-amber-400 font-semibold text-xs uppercase tracking-wider mb-3 w-fit">
                             <span class="w-6 h-px bg-amber-400"></span> Siêu ưu đãi
                         </span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white font-display leading-tight">Combo Gia Vị<br>Tiết kiệm 30%</h3>
-                        <a href="#" class="group/link inline-flex items-center gap-1.5 text-amber-400 font-semibold mt-5 text-sm hover:text-amber-300 transition w-fit">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white font-display leading-tight">Combo gia vị –<br>Tiết kiệm đến 30%</h3>
+                        <span class="group/link inline-flex items-center gap-1.5 text-amber-400 font-semibold mt-5 text-sm hover:text-amber-300 transition w-fit">
                             Mua ngay <i data-lucide="arrow-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
-                        </a>
+                        </span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -900,20 +902,20 @@
         <div class="relative">
             <div class="flex marquee-track">
                 <div class="flex items-center gap-16 px-8 shrink-0">
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">VietGAP</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">ISO 22000</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">HACCP</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">Organic</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">FDA</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">GlobalGAP</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">WinMart</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">Bách Hoá Xanh</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">CoopMart</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">GO!</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">CIRCLE K</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">AEON</div>
                 </div>
                 <div class="flex items-center gap-16 px-8 shrink-0">
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">VietGAP</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">ISO 22000</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">HACCP</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">Organic</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">FDA</div>
-                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">GlobalGAP</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">WinMart</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">Bách Hoá Xanh</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">CoopMart</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">GO!</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">CIRCLE K</div>
+                    <div class="w-32 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold text-sm">AEON</div>
                 </div>
             </div>
         </div>
@@ -1290,6 +1292,8 @@
             { id: 20, name: 'Dầu Màu Điều (90ml)', price: 31899, oldPrice: 40000, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Nau%20Uop/Dau-Mau-Dieu-90ml.png', category: 'gia-vi-nau-uop', tag: 'sale' },
             { id: 21, name: 'Sa Tế Hội An (100g)', price: 38346, oldPrice: 54500, img: 'https://dhfoods.com.vn/upload/SP_Sa%20Te/Sa-Te-Hoi-An-Mat-Truoc-100gr.png', category: 'sa-te', tag: 'sale', extraBadge: 'bestseller' },
             { id: 22, name: 'Sa Tế Chay (100g)', price: 33698, oldPrice: 46600, img: 'https://dhfoods.com.vn/upload/SP_Sa%20Te/Sa-Te-Chay-Mat-Truoc-100gr.png', category: 'sa-te', tag: 'sale', extraBadge: 'new' },
+            { id: 23, name: 'Combo gia vị muối sốt', price: 107100, oldPrice: 153000, img: 'https://salt.tikicdn.com/cache/320x320/ts/product/4d/d4/a7/610418e9828269c45855a94caa1052fb.jpg', category: 'combo-gia-vi', tag: 'sale' },
+            { id: 24, name: 'Combo gia vị nấu ướp Natural', price: 105910, oldPrice: 151300, img: 'https://cf.shopee.vn/file/9a509a456673e8b54225171a1f4742d1', category: 'combo-gia-vi', tag: 'sale' },
         ];
 
         let cart = [];
@@ -1500,7 +1504,7 @@
         }
 
         /** Khi xem "Tất cả": xen kẽ từng danh mục (round-robin) thay vì ghép khối theo thứ tự trong mảng */
-        const CATEGORY_DISPLAY_ORDER = ['muoi-cham', 'xot-cham', 'gia-vi-tu-nhien', 'gia-vi-hoan-chinh', 'gia-vi-nau-uop', 'sa-te'];
+        const CATEGORY_DISPLAY_ORDER = ['muoi-cham', 'xot-cham', 'gia-vi-tu-nhien', 'gia-vi-hoan-chinh', 'gia-vi-nau-uop', 'sa-te', 'combo-gia-vi'];
         function interleaveProductsByCategory(list) {
             const buckets = new Map();
             list.forEach(p => {
@@ -1525,21 +1529,82 @@
             return out;
         }
 
+        function getProductsForMainGrid(filter) {
+            if (filter === 'all') {
+                return products.slice();
+            }
+            return products.filter(p => p.category === filter);
+        }
+
+        function buildProductCardHtml(p) {
+            const discount = p.oldPrice ? Math.round((1 - p.price / p.oldPrice) * 100) : 0;
+            const extraBadgeClass = p.extraBadge === 'bestseller' ? 'bg-forest-600' : 'bg-primary-500';
+            const extraBadgeText = p.extraBadge === 'bestseller' ? 'Bán chạy' : p.extraBadge === 'new' ? 'Mới' : '';
+            const saleBadge = p.oldPrice
+                ? `<span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">-${discount}%</span>`
+                : '';
+            const extraBadgeHtml = p.extraBadge
+                ? `<span class="${extraBadgeClass} text-white text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">${extraBadgeText}</span>`
+                : '';
+            const descBlock = p.desc
+                ? `<p class="text-gray-600 text-xs leading-snug line-clamp-3 mt-1">${p.desc}</p>`
+                : '';
+            const titleClamp = p.desc ? 'line-clamp-2 min-h-[2.25rem]' : 'line-clamp-1';
+
+            return `
+                <div class="product-card bg-white rounded-2xl overflow-hidden transition-all duration-300 group fade-in visible" data-tag="${p.tag}" data-category="${p.category}">
+                    <div class="relative overflow-hidden">
+                        <img src="${p.img}" alt="${p.name}" class="product-img w-full h-48 md:h-56 object-cover transition-transform duration-500">
+                        <div class="absolute top-3 left-3 z-10 flex flex-row flex-nowrap items-center gap-1.5 max-w-[calc(100%-1rem)]">
+                            ${saleBadge}
+                            ${extraBadgeHtml}
+                        </div>
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                            <button onclick="openQuickView(${p.id})"
+                                class="w-10 h-10 rounded-full bg-white/90 hover:bg-white flex items-center justify-center text-gray-700 hover:text-primary-600 transition-colors shadow-lg"
+                                title="Xem nhanh">
+                                <i data-lucide="eye" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="addToCart(${p.id})"
+                                class="w-10 h-10 rounded-full bg-primary-500/90 hover:bg-primary-600 flex items-center justify-center text-white transition-colors shadow-lg"
+                                title="Thêm vào giỏ">
+                                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-forest-800 text-sm md:text-base ${p.desc ? 'mb-1' : 'mb-2'} ${titleClamp}">${p.name}</h3>
+                        ${descBlock}
+                        <div class="flex items-center gap-2 ${p.desc ? 'mt-2' : ''}">
+                            <span class="text-primary-500 font-bold text-lg">${formatPrice(p.price)}</span>
+                            ${p.oldPrice ? `<span class="text-gray-400 line-through text-sm">${formatPrice(p.oldPrice)}</span>` : ''}
+                        </div>
+                        <button onclick="addToCart(${p.id})" class="mt-3 w-full h-10 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white rounded-xl text-sm font-semibold transition flex items-center justify-center gap-1.5">
+                            <i data-lucide="plus" class="w-4 h-4"></i> Thêm giỏ hàng
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
         function renderProducts(filter = 'all') {
             const grid = document.getElementById('products-grid');
-            let filtered = products;
-            
-            if (filter !== 'all') {
-                filtered = products.filter(p => p.category === filter);
-            }
-
             const q = normalizeText(searchQuery);
+
+            let filtered;
             if (q) {
-                filtered = filtered.filter(p => {
+                filtered = products.filter(p => {
                     const name = normalizeText(p.name);
                     const cat = normalizeText(p.category);
-                    return name.includes(q) || cat.includes(q);
+                    const desc = normalizeText(p.desc || '');
+                    const match = name.includes(q) || cat.includes(q) || desc.includes(q);
+                    if (!match) return false;
+                    if (filter === 'all') return true;
+                    if (filter === 'combo-gia-vi') return p.category === 'combo-gia-vi';
+                    return p.category === filter;
                 });
+            } else {
+                filtered = getProductsForMainGrid(filter);
             }
 
             if (filter === 'all') {
@@ -1548,51 +1613,7 @@
 
             const visibleProducts = filtered.slice(0, productsVisibleCount);
 
-            grid.innerHTML = visibleProducts.map(p => {
-                const discount = p.oldPrice ? Math.round((1 - p.price / p.oldPrice) * 100) : 0;
-                const extraBadgeClass = p.extraBadge === 'bestseller' ? 'bg-forest-600' : 'bg-primary-500';
-                const extraBadgeText = p.extraBadge === 'bestseller' ? 'Bán chạy' : p.extraBadge === 'new' ? 'Mới' : '';
-                const saleBadge = p.oldPrice
-                    ? `<span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">-${discount}%</span>`
-                    : '';
-                const extraBadgeHtml = p.extraBadge
-                    ? `<span class="${extraBadgeClass} text-white text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">${extraBadgeText}</span>`
-                    : '';
-
-                return `
-                    <div class="product-card bg-white rounded-2xl overflow-hidden transition-all duration-300 group fade-in visible" data-tag="${p.tag}" data-category="${p.category}">
-                        <div class="relative overflow-hidden">
-                            <img src="${p.img}" alt="${p.name}" class="product-img w-full h-48 md:h-56 object-cover transition-transform duration-500">
-                            <div class="absolute top-3 left-3 z-10 flex flex-row flex-nowrap items-center gap-1.5 max-w-[calc(100%-1rem)]">
-                                ${saleBadge}
-                                ${extraBadgeHtml}
-                            </div>
-                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
-                                <button onclick="openQuickView(${p.id})"
-                                    class="w-10 h-10 rounded-full bg-white/90 hover:bg-white flex items-center justify-center text-gray-700 hover:text-primary-600 transition-colors shadow-lg"
-                                    title="Xem nhanh">
-                                    <i data-lucide="eye" class="w-4 h-4"></i>
-                                </button>
-                                <button onclick="addToCart(${p.id})"
-                                    class="w-10 h-10 rounded-full bg-primary-500/90 hover:bg-primary-600 flex items-center justify-center text-white transition-colors shadow-lg"
-                                    title="Thêm vào giỏ">
-                                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-semibold text-forest-800 text-sm md:text-base mb-2 line-clamp-1">${p.name}</h3>
-                            <div class="flex items-center gap-2">
-                                <span class="text-primary-500 font-bold text-lg">${formatPrice(p.price)}</span>
-                                ${p.oldPrice ? `<span class="text-gray-400 line-through text-sm">${formatPrice(p.oldPrice)}</span>` : ''}
-                            </div>
-                            <button onclick="addToCart(${p.id})" class="mt-3 w-full h-10 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white rounded-xl text-sm font-semibold transition flex items-center justify-center gap-1.5">
-                                <i data-lucide="plus" class="w-4 h-4"></i> Thêm giỏ hàng
-                            </button>
-                        </div>
-                    </div>
-                `;
-            }).join('');
+            grid.innerHTML = visibleProducts.map(p => buildProductCardHtml(p)).join('');
 
             lucide.createIcons();
 
@@ -1624,6 +1645,12 @@
             });
 
             renderProducts(filter);
+
+            if (filter === 'combo-gia-vi') {
+                requestAnimationFrame(() => {
+                    document.getElementById('combo-gia-vi')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            }
         }
 
         function closeRecipe() {
@@ -2041,7 +2068,7 @@
                             ${original ? `<span class="text-xs text-green-700 font-bold bg-green-50 px-2 py-1 rounded-full">-${discountPct}%</span>` : ''}
                         </div>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            Gia vị chọn lọc từ nguyên liệu tự nhiên, hương thơm đậm đà — phù hợp cho bữa cơm Việt mỗi ngày.
+                            ${product.desc ? product.desc : 'Gia vị chọn lọc từ nguyên liệu tự nhiên, hương thơm đậm đà — phù hợp cho bữa cơm Việt mỗi ngày.'}
                         </p>
                         <div class="flex gap-3 mt-6">
                             <button onclick="addToCart(${product.id}); closeQuickView();"
