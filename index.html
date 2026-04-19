@@ -101,7 +101,21 @@
         #navbar.nav-scrolled { margin-left: 0.25rem; margin-right: 0.25rem; top: 0.375rem; border-color: rgba(200, 200, 200, 0.4); box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12); }
 
         .gradient-text { background: linear-gradient(135deg, #ee7a12, #ff9a3c, #ffb86b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        
+        .gradient-text .stat-plus {
+            display: inline-block;
+            vertical-align: super;
+            font-size: 0.52em;
+            font-weight: 800;
+            line-height: 1;
+            margin-left: 0.06em;
+            position: relative;
+            top: -0.28em;
+            -webkit-text-fill-color: #ffb86b;
+            color: #ffb86b;
+            background: none;
+            -webkit-background-clip: unset;
+            background-clip: unset;
+        }
         /* Toast */
         .toast { animation: slideInRight 0.4s ease-out; }
         @keyframes slideInRight { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
@@ -112,6 +126,18 @@
         
         /* Counter */
         .counter-section { background: linear-gradient(135deg, #334b37 0%, #527557 100%); }
+        .counter-section .stat-plus {
+            display: inline-block;
+            vertical-align: super;
+            font-size: 0.65em;
+            font-weight: 800;
+            line-height: 1;
+            margin-left: 0.08em;
+            position: relative;
+            top: -0.22em;
+            color: #fbbf24;
+            -webkit-text-fill-color: #fbbf24;
+        }
 
         @keyframes floatSlow{0%,100%{transform:translateY(0px) rotate(0deg)}50%{transform:translateY(-50px) rotate(2deg)}}
         .float-slow{animation:floatSlow 7s ease-in-out infinite}
@@ -227,10 +253,12 @@
                         </a>
                         <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0">
                             <div class="glass rounded-2xl shadow-2xl p-3 min-w-[220px]">
-                                <a href="#products" onclick="filterProducts('gia-vi'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị nấu ăn</a>
-                                <a href="#products" onclick="filterProducts('nuoc-cham'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Nước chấm</a>
-                                <a href="#products" onclick="filterProducts('tem-uyep'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị tẩm ướp</a>
-                                <a href="#products" onclick="filterProducts('huu-co'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Sản phẩm hữu cơ</a>
+                                <a href="#products" onclick="filterProducts('muoi-cham'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Muối chấm Tây Ninh</a>
+                                <a href="#products" onclick="filterProducts('xot-cham'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Xốt chấm</a>
+                                <a href="#products" onclick="filterProducts('gia-vi-tu-nhien'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị tự nhiên</a>
+                                <a href="#products" onclick="filterProducts('gia-vi-hoan-chinh'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị hoàn chỉnh</a>
+                                <a href="#products" onclick="filterProducts('gia-vi-nau-uop'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Gia vị nấu & ướp</a>
+                                <a href="#products" onclick="filterProducts('sa-te'); return false;" class="block px-4 py-2.5 text-sm text-gray-600 hover:text-primary-500 hover:bg-white/60 rounded-xl transition">Sa tế</a>
                             </div>
                         </div>
                     </div>
@@ -307,7 +335,7 @@
     <section id="home" class="relative h-[500px] md:h-[600px] lg:h-[680px] overflow-hidden">
         <div id="hero-slider" class="relative w-full h-full">
             <div class="hero-slide active">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('http://static.photos/food/1200x630/1')"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://dhfoods.com.vn/upload/News/Dh-Foods-Tai-Dinh-Vi/4-Minh-Hoa-Rebranding-Dh-Foods.webp')"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-forest-900/80 via-forest-900/50 to-transparent"></div>
                 <div class="relative z-10 h-full flex items-center">
                     <div class="max-w-7xl mx-auto px-4 w-full">
@@ -330,7 +358,7 @@
                 </div>
             </div>
             <div class="hero-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('http://static.photos/nature/1200x630/15')"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://channel.mediacdn.vn/428462621602512896/2022/6/8/cafefanh-3sot-cham-dh-foods-moi-ra-mat-1654658988235908569578.jpg')"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-warm-900/80 via-warm-900/50 to-transparent"></div>
                 <div class="relative z-10 h-full flex items-center">
                     <div class="max-w-7xl mx-auto px-4 w-full">
@@ -338,11 +366,11 @@
                             <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 text-white text-xs font-semibold px-5 py-2 rounded-full mb-6">
                                 <span class="w-2 h-2 bg-primary-300 rounded-full animate-pulse"></span> HỮU CƠ 100%
                             </div>
-                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-display leading-tight mb-4">Nông sản sạch <br><span class="text-warm-400">Từ trang trại</span></h1>
-                            <p class="text-white/80 text-base md:text-lg mb-8">Trồng trọt và chế biến theo tiêu chuẩn hữu cơ quốc tế, an toàn cho sức khỏe gia đình bạn</p>
+                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-display leading-tight mb-4">Chuẩn chất lượng <br><span class="text-warm-400">Trọn vị ngon</span></h1>
+                            <p class="text-white/80 text-base md:text-lg mb-8">Từ nguyên liệu chọn lọc đến sản xuất đạt chuẩn quốc tế, DH Foods đảm bảo mỗi sản phẩm đều an toàn và đậm vị tự nhiên</p>
                             <div class="flex flex-wrap gap-3">
                                 <a href="#products" class="group/btn bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-8 py-4 rounded-2xl font-semibold transition-all shadow-xl shadow-primary-600/25 hover:shadow-primary-600/40 hover:translate-y-[-2px] flex items-center gap-2">
-                                    Khám phá <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                                    Mua ngay <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
                                 </a>
                                 <a href="#about" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white px-8 py-3.5 rounded-2xl transition-all hover:bg-white/20 flex items-center gap-2">
                                     <i data-lucide="play-circle" class="w-4 h-4"></i> Câu chuyện
@@ -353,7 +381,7 @@
                 </div>
             </div>
             <div class="hero-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('http://static.photos/food/1200x630/33')"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://static.ladipage.net/603def5a25a6580012989be7/sot-tieu-den-sot-trung-muoi-sot-me-chua-ngot-sot-mu-tat-sot-uop-thit-mat-ong-20220613091804.jpg')"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-900/50 to-transparent"></div>
                 <div class="relative z-10 h-full flex items-center">
                     <div class="max-w-7xl mx-auto px-4 w-full">
@@ -361,8 +389,8 @@
                             <div class="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-md border border-red-400/20 text-white text-xs font-semibold px-5 py-2 rounded-full mb-6">
                                 <span class="w-2 h-2 bg-red-400 rounded-full animate-pulse"></span> ƯU ĐÃI LỚN
                             </div>
-                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-display leading-tight mb-4">Giảm đến <span class="text-primary-400">30%</span><br>Mùa lễ hội</h1>
-                            <p class="text-white/80 text-base md:text-lg mb-8">Chương trình ưu đãi đặc biệt dịp lễ với hàng trăm sản phẩm gia vị chất lượng cao</p>
+                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-display leading-tight mb-4">Giảm đến <span class="text-primary-400">34%</span><br>Xốt ngon Deal hời</h1>
+                            <p class="text-white/80 text-base md:text-lg mb-8">Nhanh tay chọn ngay các dòng xốt DH Foods với ưu đãi hấp dẫn – nấu ngon dễ dàng, tiết kiệm mỗi ngày!</p>
                             <div class="flex flex-wrap gap-3">
                                 <a href="#products" class="group/btn bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-8 py-4 rounded-2xl font-semibold transition-all shadow-xl shadow-primary-600/25 hover:shadow-primary-600/40 hover:translate-y-[-2px] flex items-center gap-2">Xem ưu đãi</a>
                             </div>
@@ -388,27 +416,27 @@
             <div class="relative glass rounded-3xl shadow-2xl p-5 w-[280px] promo-shine overflow-hidden">
                 <div class="relative z-10">
                     <div class="flex items-center justify-between mb-3">
-                        <span class="bg-gradient-to-r from-red-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md shadow-red-500/25">🔥 -30%</span>
-                        <span class="text-[11px] text-gray-400 font-medium">Nổi bật</span>
+                        <span class="bg-gradient-to-r from-red-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md shadow-red-500/25">🔥 -44%</span>
+                        <span class="text-[11px] text-gray-400 font-medium">Khuyến mãi</span>
                     </div>
                     <div class="relative rounded-2xl overflow-hidden mb-4 img-reveal">
-                        <img src="http://static.photos/food/320x240/17" alt="Combo Gia Vị" class="w-full h-40 object-cover">
+                        <img src="https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Xao-Chua-Ngot-Mat-Truoc.webp" alt="Xốt gia vị hoàn chỉnh Xào chua ngọt" class="w-full h-40 object-cover">
                         <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-3 flex items-center gap-0.5">
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
                             <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-400 fill-yellow-400"></i>
-                            <span class="text-white/80 text-[11px] ml-1">(128)</span>
+                            <span class="text-white/80 text-[11px] ml-1">4,9/5</span>
                         </div>
                     </div>
-                    <h4 class="font-bold text-forest-800 text-[15px] mb-0.5">Combo Gia Vị Căn Bản</h4>
-                    <p class="text-[11px] text-gray-400 mb-3">Bộ 5 gia vị thiết yếu cho gian bếp</p>
+                    <h4 class="font-bold text-forest-800 text-[15px] mb-0.5">Xốt gia vị Xào chua ngọt</h4>
+                    <p class="text-[11px] text-gray-400 mb-3">Gia vị đậm đà, cân bằng vị chua ngọt hoàn hảo cho mọi món xào tại gia.</p>
                     <div class="flex items-center gap-2 mb-4">
-                        <span class="text-gradient font-bold text-xl">149.000₫</span>
-                        <span class="text-gray-400 line-through text-sm">185.000₫</span>
+                        <span class="text-gradient font-bold text-xl">13.899₫</span>
+                        <span class="text-gray-400 line-through text-sm">25.000₫</span>
                     </div>
-                    <button onclick="addToCart(8)" class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white py-3 rounded-2xl font-semibold transition-all shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 flex items-center justify-center gap-2 text-sm hover:translate-y-[-1px]">
+                    <button onclick="addToCart(1)" class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white py-3 rounded-2xl font-semibold transition-all shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 flex items-center justify-center gap-2 text-sm hover:translate-y-[-1px]">
                         <i data-lucide="shopping-bag" class="w-4 h-4"></i> Thêm vào giỏ
                     </button>
                 </div>
@@ -465,56 +493,56 @@
         <div class="blob w-[500px] h-[500px] bg-primary-200 -top-40 -right-40 morph-blob" style="opacity:.15;animation-delay:-3s"></div>
         <div class="max-w-7xl mx-auto px-6 relative">
             <div class="text-center mb-14 fade-up">
-                <span class="inline-flex items-center gap-2 text-primary-500 font-semibold text-sm uppercase tracking-wider"><span class="w-8 h-px bg-primary-300"></span>Danh mục<span class="w-8 h-px bg-primary-300"></span></span>
+                <span class="inline-flex items-center gap-2 text-primary-500 font-semibold text-sm uppercase tracking-wider"><span class="w-8 h-px bg-primary-300"></span>Danh mục SP<span class="w-8 h-px bg-primary-300"></span></span>
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-forest-800 font-display mt-4">Khám Phá Theo Hương Vị</h2>
-                <p class="text-gray-400 mt-4 max-w-lg mx-auto">Lựa chọn gia vị theo sở thích và nhu cầu nấu nướng</p>
+                <p class="text-gray-400 mt-4 max-w-lg mx-auto">Lựa chọn gia vị theo sở thích và nhu cầu nấu nướng                </p>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 fade-up">
-                <div class="category-card group cursor-pointer" onclick="filterProducts('gia-vi')">
+                <div class="category-card group cursor-pointer" onclick="filterProducts('muoi-cham')">
                     <div class="relative rounded-2xl overflow-hidden aspect-square shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="http://static.photos/food/200x200/10" alt="Gia vị" class="cat-img w-full h-full object-cover">
+                        <img src="https://dhfoods.com.vn/upload/import/Muoi-Tom-Tay-Ninh-110g.png" alt="Muối chấm" class="cat-img w-full h-full object-cover">
                         <div class="cat-overlay absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/20 to-transparent flex items-end p-3">
-                            <span class="text-white font-semibold text-xs md:text-sm">Gia vị</span>
+                            <span class="text-white font-semibold text-xs md:text-sm">Muối chấm</span>
                         </div>
                     </div>
                 </div>
-                <div class="category-card group cursor-pointer" onclick="filterProducts('nuoc-cham')">
+                <div class="category-card group cursor-pointer" onclick="filterProducts('xot-cham')">
                     <div class="relative rounded-2xl overflow-hidden aspect-square shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="http://static.photos/food/200x200/20" alt="Nước chấm" class="cat-img w-full h-full object-cover">
+                        <img src="https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Kim-Quat-200g.png" alt="Xốt chấm" class="cat-img w-full h-full object-cover">
                         <div class="cat-overlay absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/20 to-transparent flex items-end p-3">
-                            <span class="text-white font-semibold text-xs md:text-sm">Nước chấm</span>
+                            <span class="text-white font-semibold text-xs md:text-sm">Xốt chấm</span>
                         </div>
                     </div>
                 </div>
-                <div class="category-card group cursor-pointer" onclick="filterProducts('tem-uyep')">
+                <div class="category-card group cursor-pointer" onclick="filterProducts('gia-vi-tu-nhien')">
                     <div class="relative rounded-2xl overflow-hidden aspect-square shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="http://static.photos/food/200x200/30" alt="Tẩm ướp" class="cat-img w-full h-full object-cover">
+                        <img src="https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Tu%20Nhien/Natural-Tieu-Den-Xay-80gr.png" alt="Gia vị tự nhiên Natural Line" class="cat-img w-full h-full object-cover">
                         <div class="cat-overlay absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/20 to-transparent flex items-end p-3">
-                            <span class="text-white font-semibold text-xs md:text-sm">Tẩm ướp</span>
+                            <span class="text-white font-semibold text-xs md:text-sm">Gia vị tự nhiên</span>
                         </div>
                     </div>
                 </div>
-                <div class="category-card group cursor-pointer" onclick="filterProducts('huu-co')">
+                <div class="category-card group cursor-pointer" onclick="filterProducts('gia-vi-hoan-chinh')">
                     <div class="relative rounded-2xl overflow-hidden aspect-square shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="http://static.photos/nature/200x200/5" alt="Hữu cơ" class="cat-img w-full h-full object-cover">
+                        <img src="https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Xao-Chua-Ngot-Mat-Truoc.webp" alt="Gia vị hoàn chỉnh" class="cat-img w-full h-full object-cover">
                         <div class="cat-overlay absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/20 to-transparent flex items-end p-3">
-                            <span class="text-white font-semibold text-xs md:text-sm">Hữu cơ</span>
+                            <span class="text-white font-semibold text-xs md:text-sm">Gia vị hoàn chỉnh</span>
                         </div>
                     </div>
                 </div>
-                <div class="category-card group cursor-pointer" onclick="filterProducts('muoi')">
+                <div class="category-card group cursor-pointer" onclick="filterProducts('gia-vi-nau-uop')">
                     <div class="relative rounded-2xl overflow-hidden aspect-square shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="http://static.photos/food/200x200/40" alt="Muối" class="cat-img w-full h-full object-cover">
+                        <img src="https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Nau%20Uop/Natural-Gia-Vi-Bun-Bo-Hue-25gr.png" alt="Gia vị nấu & ướp" class="cat-img w-full h-full object-cover">
                         <div class="cat-overlay absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/20 to-transparent flex items-end p-3">
-                            <span class="text-white font-semibold text-xs md:text-sm">Muối</span>
+                            <span class="text-white font-semibold text-xs md:text-sm">Gia vị nấu &amp; ướp</span>
                         </div>
                     </div>
                 </div>
-                <div class="category-card group cursor-pointer" onclick="filterProducts('combo')">
+                <div class="category-card group cursor-pointer" onclick="filterProducts('sa-te')">
                     <div class="relative rounded-2xl overflow-hidden aspect-square shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="http://static.photos/food/200x200/50" alt="Combo" class="cat-img w-full h-full object-cover">
+                        <img src="https://dhfoods.com.vn/upload/SP_Sa%20Te/Sa-Te-Hoi-An-Mat-Truoc-100gr.png" alt="Sa tế" class="cat-img w-full h-full object-cover">
                         <div class="cat-overlay absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/20 to-transparent flex items-end p-3">
-                            <span class="text-white font-semibold text-xs md:text-sm">Combo</span>
+                            <span class="text-white font-semibold text-xs md:text-sm">Sa tế</span>
                         </div>
                     </div>
                 </div>
@@ -531,11 +559,14 @@
                     <span class="inline-flex items-center gap-2 text-primary-500 font-semibold text-sm uppercase tracking-wider"><span class="w-8 h-px bg-primary-300"></span>Sản phẩm<span class="w-8 h-px bg-primary-300"></span></span>
                     <h2 class="text-3xl md:text-4xl font-bold text-forest-800 font-display mt-2">Gia Vị Chọn Lọc</h2>
                 </div>
-                <div class="flex gap-2 flex-wrap" id="product-filters">
-                    <button class="filter-btn active px-5 py-2 rounded-full text-sm font-medium transition" data-filter="all" onclick="filterProducts('all')">Tất cả</button>
-                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition" data-filter="bestseller" onclick="filterProducts('bestseller')">Bán chạy</button>
-                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition" data-filter="new" onclick="filterProducts('new')">Mới về</button>
-                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition" data-filter="sale" onclick="filterProducts('sale')">Khuyến mãi</button>
+                <div class="flex gap-2 flex-wrap justify-start md:justify-end md:max-w-[min(100%,42rem)] lg:max-w-none" id="product-filters" role="tablist" aria-label="Lọc theo danh mục sản phẩm">
+                    <button type="button" class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="all" onclick="filterProducts('all')">Tất cả</button>
+                    <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="muoi-cham" onclick="filterProducts('muoi-cham')">Muối chấm</button>
+                    <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="xot-cham" onclick="filterProducts('xot-cham')">Xốt chấm</button>
+                    <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="gia-vi-tu-nhien" onclick="filterProducts('gia-vi-tu-nhien')">Gia vị tự nhiên</button>
+                    <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="gia-vi-hoan-chinh" onclick="filterProducts('gia-vi-hoan-chinh')">Gia vị hoàn chỉnh</button>
+                    <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="gia-vi-nau-uop" onclick="filterProducts('gia-vi-nau-uop')">Gia vị nấu &amp; ướp</button>
+                    <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition shrink-0" data-filter="sa-te" onclick="filterProducts('sa-te')">Sa tế</button>
                 </div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" id="products-grid">
@@ -587,7 +618,7 @@
     <section id="about" class="py-20 md:py-28 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-forest-900 via-forest-800 to-primary-900"></div>
         <div class="absolute inset-0 opacity-[.07]">
-            <img src="http://static.photos/nature/1200x630/44" class="w-full h-full object-cover" alt="">
+            <img src="https://dhfoods.com.vn/upload/News/KD-Trading/Tiep-Noi-Hanh-Trinh-Vuon-Tam-Quoc-Te-Dh-Foods-Cung-K&D-Trading-International-Gia-Nhap-Thi-Truong-Cannada-2.png" class="w-full h-full object-cover" alt="">
         </div>
         <div class="hero-grain"></div>
         <!-- Decorative -->
@@ -598,20 +629,20 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="fade-up">
                     <span class="inline-flex items-center gap-2 text-primary-400 font-semibold text-sm uppercase tracking-wider"><span class="w-8 h-px bg-primary-500/40"></span>Câu chuyện của chúng tôi</span>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display mt-5 mb-6 leading-tight">Hương Vị Từ<br><span class="italic text-primary-400">Trái Tim Việt</span></h2>
-                    <p class="text-white/60 text-lg leading-relaxed mb-6">DH Foods được thành lập với sứ mệnh mang đến những sản phẩm gia vị tự nhiên, sạch và an toàn nhất cho mọi gia đình Việt. Từ những cánh đồng hữu cơ đến gian bếp của bạn, chúng tôi luôn tâm huyết ở từng hạt gia vị.</p>
-                    <p class="text-white/60 text-lg leading-relaxed mb-10">Với hơn 10 năm kinh nghiệm, DH Foods tự hào là thương hiệu gia vị uy tín hàng đầu, xuất khẩu đến hơn 20 quốc gia trên thế giới.</p>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display mt-5 mb-6 leading-tight">Dh Foods – 13 Năm<br><span class="italic text-primary-400">Gói Trọn Hồn Việt</span></h2>
+                    <p class="text-white/60 text-lg leading-relaxed mb-6">Hành trình 13 năm của Dh Foods là minh chứng cho khát vọng nâng tầm gia vị bản địa bằng sự tử tế và bản lĩnh Việt. Không chỉ dừng lại ở sứ mệnh mang sản phẩm sạch, tự nhiên đến mọi gian bếp, Dh Foods còn lấy giá trị văn hóa làm kim chỉ nam để vận hành và gắn kết đội ngũ.</p>
+                    <p class="text-white/60 text-lg leading-relaxed mb-10">Từ những hũ gia vị mang đậm "hồn Việt", thương hiệu đang bền bỉ khẳng định vị thế trên bản đồ thực phẩm toàn cầu. Với sức mạnh nội tại vững chắc, Dh Foods đặt mục tiêu chiến lược: hiện diện tại ít nhất 30 quốc gia trong 5 năm tới, mang tinh thần và niềm tự hào Việt Nam vươn xa ra thế giới.</p>
                     <div class="grid grid-cols-3 gap-6 mb-10">
                         <div class="text-center p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                            <p class="text-3xl md:text-4xl font-bold text-primary-400 gradient-text" data-count="10">0</p>
+                            <p class="text-3xl md:text-4xl font-bold text-primary-400 gradient-text" data-count="13" data-show-plus="true">0</p>
                             <p class="text-white/50 text-sm mt-1">Năm KN</p>
                         </div>
                         <div class="text-center p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                            <p class="text-3xl md:text-4xl font-bold text-primary-400 gradient-text" data-count="500">0</p>
+                            <p class="text-3xl md:text-4xl font-bold text-primary-400 gradient-text" data-count="90"  data-suffix="K" data-show-plus="true">0</p>
                             <p class="text-white/50 text-sm mt-1">Sản phẩm</p>
                         </div>
                         <div class="text-center p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                            <p class="text-3xl md:text-4xl font-bold text-primary-400 gradient-text" data-count="20">0</p>
+                            <p class="text-3xl md:text-4xl font-bold text-primary-400 gradient-text" data-count="15" data-show-plus="true">0</p>
                             <p class="text-white/50 text-sm mt-1">Quốc gia</p>
                         </div>
                     </div>
@@ -621,12 +652,12 @@
                 </div>
                 <div class="grid grid-cols-2 gap-4 fade-up">
                     <div class="space-y-4">
-                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-48"><img src="http://static.photos/nature/320x240/11" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
-                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-64"><img src="http://static.photos/food/320x240/25" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-48"><img src="https://cdn2.tuoitre.vn/thumb_w/480/471584752817336320/2024/1/5/gioquatetvietnam-17043898257411077946638.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-64"><img src="https://down-vn.img.susercontent.com/file/sg-11134201-22120-8d1ev4cxfflvcf" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
                     </div>
                     <div class="space-y-4 pt-8">
-                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-64"><img src="http://static.photos/food/320x240/35" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
-                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-48"><img src="http://static.photos/nature/320x240/8" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-64"><img src="https://channel.mediacdn.vn/2021/12/21/photo-2-1640071866923219888262.jpg" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+                        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 h-48"><img src="https://dhfoods.com.vn/upload/Kham-Pha-Gia-Vi/Muoi-Ot-Chanh-Nha-Trang-Dh-Foods-0.png" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
                     </div>
                 </div>
             </div>
@@ -639,22 +670,22 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
                 <div class="fade-in">
                     <i data-lucide="users" class="w-8 h-8 mx-auto mb-3 text-primary-400"></i>
-                    <p class="text-3xl md:text-4xl font-bold font-family">50K+</p>
+                    <p class="text-3xl md:text-4xl font-bold font-family" data-count="50" data-suffix="K" data-show-plus="true">0</p>
                     <p class="text-white/60 text-sm mt-1">Khách hàng tin tưởng</p>
                 </div>
                 <div class="fade-in">
                     <i data-lucide="package" class="w-8 h-8 mx-auto mb-3 text-primary-400"></i>
-                    <p class="text-3xl md:text-4xl font-bold font-family">200+</p>
+                    <p class="text-3xl md:text-4xl font-bold font-family" data-count="200" data-show-plus="true">0</p>
                     <p class="text-white/60 text-sm mt-1">Sản phẩm đa dạng</p>
                 </div>
                 <div class="fade-in">
                     <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-3 text-primary-400"></i>
-                    <p class="text-3xl md:text-4xl font-bold font-family">63</p>
+                    <p class="text-3xl md:text-4xl font-bold font-family" data-count="63">0</p>
                     <p class="text-white/60 text-sm mt-1">Tỉnh thành phân phối</p>
                 </div>
                 <div class="fade-in">
                     <i data-lucide="award" class="w-8 h-8 mx-auto mb-3 text-primary-400"></i>
-                    <p class="text-3xl md:text-4xl font-bold font-family">15</p>
+                    <p class="text-3xl md:text-4xl font-bold font-family" data-count="15">0</p>
                     <p class="text-white/60 text-sm mt-1">Giải thưởng quốc gia</p>
                 </div>
             </div>
@@ -671,50 +702,120 @@
                 <p class="text-gray-400 mt-4 max-w-lg mx-auto">Những món ngon dễ làm với gia vị DH Foods</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up border border-gray-100" onclick="openRecipe('thit-kho-tau')">
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up border border-gray-100" onclick="openRecipe('canh-ga-chien')">
                     <div class="relative overflow-hidden img-reveal">
-                        <img src="http://static.photos/food/640x360/12" alt="Thịt kho" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute top-4 left-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-primary-500/20">Món chính</div>
+                        <img src="https://www.dhfoods.com.vn/upload/Food-Recipe/Canh-ga-chien/Lam-Canh-Ga-Chien-Bo-Toi-Thanh-Pham.png" alt="Thịt kho" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-primary-500/20">Món phụ</div>
                         <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1 rounded-full flex items-center gap-1">
-                            <i data-lucide="clock" class="w-3 h-3"></i> 30 phút
+                            <i data-lucide="clock" class="w-3 h-3"></i> 40 phút
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Thịt kho tàu đậm vị với nước màu DH Foods</h3>
-                        <p class="text-gray-400 text-sm line-clamp-2">Món thịt kho tàu truyền thống với hương vị đậm đà, mềm mịn nhờ bí quyết từ nước màu</p>
-                        <a href="#" onclick="openRecipe('thit-kho-tau'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Cánh gà chiên bơ tỏi thơm lừng với Tỏi Bột DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món cánh gà chiên bơ tỏi dậy hương hấp dẫn, giòn rụm và béo thơm khó cưỡng</p>
+                        <a href="#" onclick="openRecipe('canh-ga-chien'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
                             Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
                         </a>
                     </div>
                 </article>
-                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-1 border border-gray-100" onclick="openRecipe('bun-bo-hue')">
+
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-1 border border-gray-100" onclick="openRecipe('tom-sot-trung-muoi')">
                     <div class="relative overflow-hidden img-reveal">
-                        <img src="http://static.photos/food/640x360/22" alt="Bún bò" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute top-4 left-4 bg-gradient-to-r from-forest-500 to-forest-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-forest-500/20">Món nước</div>
+                        <img src="https://cdn.shopify.com/s/files/1/0617/2497/files/tom-sot-trung-muoi.jpg" alt="Tôm sốt trứng muối" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-forest-500 to-forest-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-forest-500/20">Món chính</div>
+                        <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i> 35 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Tôm sốt trứng muối béo ngậy với Xốt Trứng Muối DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món tôm sốt trứng muối béo bùi, đậm đà, mang đến hương vị mới lạ đầy lôi cuốn</p>
+                        <a href="#" onclick="openRecipe('tom-sot-trung-muoi'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                            Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-2 border border-gray-100" onclick="openRecipe('canh-chua')">
+                    <div class="relative overflow-hidden img-reveal">
+                        <img src="https://cdn.hstatic.net/products/200000935481/canh-chua_e15777bbae824b3b9b803cdba64b1ef2.png" alt="Sườn nướng" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-warm-500 to-warm-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-warm-500/20">Món canh</div>
+                        <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i> 25 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Canh chua cá lóc chuẩn vị miền Tây với Xốt Gia Vị Hoàn Chỉnh DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món canh chua cá lóc thanh dịu, tươi mát, mang hương vị dân dã đặc trưng miền Tây</p>
+                        <a href="#" onclick="openRecipe('canh-chua'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                            Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-2 border border-gray-100" onclick="openRecipe('ga-nuong')">
+                    <div class="relative overflow-hidden img-reveal">
+                        <img src="https://www.dhfoods.com.vn/upload/Food-Recipe/GA-NUONG-TIEU-DEN/3-Ga-Nuong-Tieu-Den.webp" alt="Sườn nướng" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-warm-500 to-warm-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-warm-500/20">Nướng</div>
+                        <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i> 60 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Gà nướng tiêu đen đậm đà với Xốt tiêu đen DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món gà nướng tiêu đen thơm nồng, đậm vị, cực kỳ hấp dẫn cho bữa ăn gia đình</p>
+                        <a href="#" onclick="openRecipe('ga-nuong'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                            Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-2 border border-gray-100" onclick="openRecipe('ca-loc')">
+                    <div class="relative overflow-hidden img-reveal">
+                        <img src="https://www.dhfoods.com.vn/upload/Food-Recipe/Ca-Loc-Kho-Tieu/4-Ca-Loc-Kho-Tieu.webp" alt="Sườn nướng" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-warm-500 to-warm-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-warm-500/20">Món chính</div>
                         <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
                             <i data-lucide="clock" class="w-3 h-3"></i> 45 phút
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Bún bò Huế chuẩn vị với sả và ớt DH Foods</h3>
-                        <p class="text-gray-400 text-sm line-clamp-2">Nước lèo thơm lừng, vị cay nồng đặc trưng từ sả và ớt mang lại hương vị Huế đích thực</p>
-                        <a href="#" onclick="openRecipe('bun-bo-hue'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Cá lóc kho tiêu đậm vị với Xốt gia vị hoàn chỉnh DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món cá lóc kho tiêu truyền thống, đậm đà hương vị, ăn cùng cơm nóng cực hao</p>
+                        <a href="#" onclick="openRecipe('ca-loc'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
                             Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
                         </a>
                     </div>
                 </article>
-                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-2 border border-gray-100" onclick="openRecipe('suon-nuong-mat-ong')">
+
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-2 border border-gray-100" onclick="openRecipe('dui-ga-nuong')">
                     <div class="relative overflow-hidden img-reveal">
-                        <img src="http://static.photos/food/640x360/32" alt="Sườn nướng" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="https://dhfoods.com.vn/upload/Food-Recipe/Dui-Ga-Nuong-Muoi-Ot/Bia-Dui-Ga-Nuong-Muoi-Ot.webp" alt="Sườn nướng" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute top-4 left-4 bg-gradient-to-r from-warm-500 to-warm-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-warm-500/20">Nướng</div>
                         <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
-                            <i data-lucide="clock" class="w-3 h-3"></i> 20 phút
+                            <i data-lucide="clock" class="w-3 h-3"></i> 60 phút
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Sườn nướng mật ong với gia vị tẩm ướp DH Foods</h3>
-                        <p class="text-gray-400 text-sm line-clamp-2">Sườn nướng mềm mọng, bóng bẩy với hỗn hợp gia vị tẩm ướp đặc biệt</p>
-                        <a href="#" onclick="openRecipe('suon-nuong-mat-ong'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Đùi gà nướng muối ớt cay nồng với Xốt DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món gà nướng muối ớt cay nồng, giòn rụm bên ngoài, mềm mọng bên trong đầy hấp dẫn</p>
+                        <a href="#" onclick="openRecipe('dui-ga-nuong'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
+                            Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 fade-up fade-up-delay-2 border border-gray-100" onclick="openRecipe('thit-xien-nuong')">
+                    <div class="relative overflow-hidden img-reveal">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dFxVLB7H6x3uS4xZtlr0AF6XGlWRnkKQxA&s" alt="Sườn nướng" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-gradient-to-r from-warm-500 to-warm-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-warm-500/20">Nướng</div>
+                        <div class="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i> 50 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-forest-800 group-hover:text-primary-500 transition mb-2 leading-snug">Thịt xiên nướng ngũ vị thơm lừng với Xốt DH Foods</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">Món thịt xiên nướng ngũ vị thơm lừng, hấp dẫn với hương vị hài hòa khó cưỡng</p>
+                        <a href="#" onclick="openRecipe('thit-xien-nuong'); return false;" class="group/link inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-4 hover:text-primary-600 transition">
                             Xem chi tiết <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
                         </a>
                     </div>
@@ -1145,13 +1246,13 @@
     <div id="floating-product" class="fixed bottom-6 left-6 z-40 transform translate-y-24 opacity-0 transition-all duration-500 pointer-events-none">
         <div class="glass rounded-2xl shadow-2xl border border-primary-100/50 flex items-center gap-3 p-3 pr-4 pointer-events-auto max-w-[300px] hover:shadow-primary-500/10 transition-shadow">
             <div class="relative shrink-0">
-                <img src="http://static.photos/food/200x200/2" class="w-14 h-14 rounded-xl object-cover" alt="Hot Deal">
-                <span class="absolute -top-1 -right-1 bg-gradient-to-r from-red-500 to-orange-500 text-white text-[9px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md">-19%</span>
+                <img src="https://dhfoods.com.vn/upload/import/Muoi-Tom-Tay-Ninh-110g.png" class="w-14 h-14 rounded-xl object-cover" alt="Hot Deal">
+                <span class="absolute -top-1 -right-1 bg-gradient-to-r from-red-500 to-orange-500 text-white text-[9px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md">-37%</span>
             </div>
             <div class="min-w-0 flex-1">
                 <p class="text-[10px] text-primary-600 font-bold uppercase tracking-wider">🔥 Hot Deal</p>
-                <h4 class="font-bold text-sm text-forest-800 truncate">Nước mắm nhĩ Premium</h4>
-                <div class="flex items-center gap-1.5"><span class="text-gradient font-bold text-sm">89.000₫</span><span class="text-gray-400 line-through text-xs">110.000₫</span></div>
+                <h4 class="font-bold text-sm text-forest-800 truncate">Muối Tôm Tây Ninh (110g)</h4>
+                <div class="flex items-center gap-1.5"><span class="text-gradient font-bold text-sm">21.899₫</span><span class="text-gray-400 line-through text-xs">35.000₫</span></div>
             </div>
             <button onclick="dismissFloating()" class="p-1 hover:bg-gray-100 rounded-lg shrink-0"><i data-lucide="x" class="w-3.5 h-3.5 text-gray-400"></i></button>
         </div>
@@ -1167,18 +1268,28 @@
         // Product Data
         // ============================
         const products = [
-            { id: 1, name: 'Nước màu DH Foods', price: 45000, oldPrice: 55000, img: 'http://static.photos/food/320x240/10', badge: 'sale', category: 'gia-vi', tag: 'sale' },
-            { id: 2, name: 'Nước mắm nhĩ Premium', price: 89000, oldPrice: null, img: 'http://static.photos/food/320x240/11', badge: 'bestseller', category: 'nuoc-cham', tag: 'bestseller' },
-            { id: 3, name: 'Gia vị tẩm ướp BBQ', price: 35000, oldPrice: null, img: 'http://static.photos/food/320x240/12', badge: 'new', category: 'tem-uyep', tag: 'new' },
-            { id: 4, name: 'Muối hồng Himalaya', price: 65000, oldPrice: 78000, img: 'http://static.photos/food/320x240/13', badge: 'sale', category: 'muoi', tag: 'sale' },
-            { id: 5, name: 'Hạt nêm hữu cơ', price: 52000, oldPrice: null, img: 'http://static.photos/food/320x240/14', badge: 'bestseller', category: 'huu-co', tag: 'bestseller' },
-            { id: 6, name: 'Bột ngũ vị hương', price: 38000, oldPrice: null, img: 'http://static.photos/food/320x240/15', badge: 'new', category: 'gia-vi', tag: 'new' },
-            { id: 7, name: 'Nước chấm chua ngọt', price: 28000, oldPrice: 35000, img: 'http://static.photos/food/320x240/16', badge: 'sale', category: 'nuoc-cham', tag: 'sale' },
-            { id: 8, name: 'Combo Gia vị căn bản', price: 149000, oldPrice: 185000, img: 'http://static.photos/food/320x240/17', badge: 'bestseller', category: 'combo', tag: 'bestseller' },
-            { id: 9, name: 'Sả sấy khô', price: 25000, oldPrice: null, img: 'http://static.photos/food/320x240/18', badge: 'new', category: 'gia-vi', tag: 'new' },
-            { id: 10, name: 'Ớt bột Cayenne', price: 32000, oldPrice: null, img: 'http://static.photos/food/320x240/19', badge: 'bestseller', category: 'gia-vi', tag: 'bestseller' },
-            { id: 11, name: 'Tiêu đen nguyên hạt', price: 58000, oldPrice: 68000, img: 'http://static.photos/food/320x240/20', badge: 'sale', category: 'gia-vi', tag: 'sale' },
-            { id: 12, name: 'Gia vị phở gói', price: 42000, oldPrice: null, img: 'http://static.photos/food/320x240/21', badge: 'new', category: 'gia-vi', tag: 'new' },
+            { id: 1, name: 'Muối Tôm Tây Ninh (110g)', price: 21899, oldPrice: 35000, img: 'https://dhfoods.com.vn/upload/import/Muoi-Tom-Tay-Ninh-110g.png', category: 'muoi-cham', tag: 'sale', extraBadge: 'bestseller' },
+            { id: 2, name: 'Muối Chấm Hoa Quả (110g)', price: 23899, oldPrice: 35000, img: 'https://dhfoods.com.vn/upload/import/Muoi-Cham-Hoa-Qua-110gr.png', category: 'muoi-cham', tag: 'sale' },
+            { id: 3, name: 'Muối Ớt Xanh Tây Ninh (110g)', price: 22899, oldPrice: 35000, img: 'https://dhfoods.com.vn/upload/import/Muoi-Ot-Xanh-Tay-Ninh-110gr.png', category: 'muoi-cham', tag: 'sale' },
+            { id: 4, name: 'Muối Tiêu Lá Chanh (110g)', price: 23899, oldPrice: 35000, img: 'https://dhfoods.com.vn/upload/import/Muoi-Tieu-La-Chanh-110gr.png', category: 'muoi-cham', tag: 'sale', extraBadge: 'new' },
+            { id: 5, name: 'Xốt Kim Quất (200g)', price: 26400, oldPrice: 40000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Kim-Quat-200g.png', category: 'xot-cham', tag: 'sale', extraBadge: 'new' },
+            { id: 6, name: 'Xốt Thái Sả Tắc (200g)', price: 39600, oldPrice: 60000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Thai-Sa-Tac-Mat-Truoc-200g.png', category: 'xot-cham', tag: 'sale', extraBadge: 'bestseller' },
+            { id: 7, name: 'Muối Ớt Chanh Nha Trang (200g)', price: 39600, oldPrice: 60000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Muoi-Ot-Chanh-Nha-Trang-200g.png', category: 'xot-cham', tag: 'sale' },
+            { id: 8, name: 'Xốt Trứng Muối (200g)', price: 39600, oldPrice: 60000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Trung-Muoi-100g.png', category: 'xot-cham', tag: 'sale', extraBadge: 'new' },
+            { id: 9, name: 'Tiêu Đen Xay (45g)', price: 28899, oldPrice: 30788, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Tu%20Nhien/Natural-Tieu-Den-Xay-80gr.png', category: 'gia-vi-tu-nhien', tag: 'sale', extraBadge: 'bestseller' },
+            { id: 10, name: 'Ớt Bột Hàn Quốc (45g)', price: 20899, oldPrice: 30000, img: 'https://www.dhfoods.com.vn/upload/SP_Gia%20Vi%20Tu%20Nhien/Natural-Ot-Bot-Han-Quoc-80gr.png', category: 'gia-vi-tu-nhien', tag: 'sale' },
+            { id: 11, name: 'Bột Nghệ nguyên chất (40g)', price: 16899, oldPrice: 24200, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Tu%20Nhien/Natural-Nghe-Bot-40gr.png', category: 'gia-vi-tu-nhien', tag: 'sale', extraBadge: 'new' },
+            { id: 12, name: 'Bột Tỏi nguyên chất (60g)', price: 20899, oldPrice: 29820, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Tu%20Nhien/Natural-Toi-Bot-60gr.png', category: 'gia-vi-tu-nhien', tag: 'sale' },
+            { id: 13, name: 'Xốt gia vị hoàn chỉnh Xào chua ngọt', price: 13899, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Xao-Chua-Ngot-Mat-Truoc.webp', category: 'gia-vi-hoan-chinh', tag: 'sale', extraBadge: 'bestseller' },
+            { id: 14, name: 'Xốt gia vị hoàn chỉnh Canh chua', price: 13899, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Canh-Chua-Mat-Truoc.webp', category: 'gia-vi-hoan-chinh', tag: 'sale' },
+            { id: 15, name: 'Xốt gia vị hoàn chỉnh Kho thịt cá', price: 13899, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Kho-Thit-Ca-Mat-Truoc.webp', category: 'gia-vi-hoan-chinh', tag: 'sale' },
+            { id: 16, name: 'Xốt gia vị hoàn chỉnh Lẩu chua cay', price: 17899, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/Xot-Gia-Vi-Hoan-Chinh-Lau-Thai-Chua-Cay-Mat-Truoc.webp', category: 'gia-vi-hoan-chinh', tag: 'sale', extraBadge: 'new' },
+            { id: 17, name: 'Xốt gia vị hoàn chỉnh Nướng thịt', price: 13899, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Sot-Cham-GVHC/3D_GVHC_NUONG%20THIT.webp', category: 'gia-vi-hoan-chinh', tag: 'sale' },
+            { id: 18, name: 'Gia vị Bún Bò Huế (25g)', price: 17899, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Nau%20Uop/Natural-Gia-Vi-Bun-Bo-Hue-25gr.png', category: 'gia-vi-nau-uop', tag: 'sale', extraBadge: 'bestseller' },
+            { id: 19, name: 'Gia vị nấu Phở Gà (20g)', price: 16900, oldPrice: 25000, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Nau%20Uop/Natural-Gia-Vi-Nau-Pho-Ga-20gr.png', category: 'gia-vi-nau-uop', tag: 'sale' },
+            { id: 20, name: 'Dầu Màu Điều (90ml)', price: 31899, oldPrice: 40000, img: 'https://dhfoods.com.vn/upload/SP_Gia%20Vi%20Nau%20Uop/Dau-Mau-Dieu-90ml.png', category: 'gia-vi-nau-uop', tag: 'sale' },
+            { id: 21, name: 'Sa Tế Hội An (100g)', price: 38346, oldPrice: 54500, img: 'https://dhfoods.com.vn/upload/SP_Sa%20Te/Sa-Te-Hoi-An-Mat-Truoc-100gr.png', category: 'sa-te', tag: 'sale', extraBadge: 'bestseller' },
+            { id: 22, name: 'Sa Tế Chay (100g)', price: 33698, oldPrice: 46600, img: 'https://dhfoods.com.vn/upload/SP_Sa%20Te/Sa-Te-Chay-Mat-Truoc-100gr.png', category: 'sa-te', tag: 'sale', extraBadge: 'new' },
         ];
 
         let cart = [];
@@ -1187,78 +1298,166 @@
         const PRODUCTS_STEP = 8;
         let productsVisibleCount = PRODUCTS_STEP;
         const couponConfigs = {
-            DUYVINH09: { type: 'percent', value: 50, label: 'Giảm 20%' },
-            DHFOODS50: { type: 'fixed', value: 50000, label: 'Giảm 50.000đ' },
-            FREESHIP: { type: 'fixed', value: 30000, label: 'Ưu đãi 30.000đ' }
+            DUYVINH09: { type: 'percent', value: 50, label: 'Giảm 50%' },
+            DHFOODS50: { type: 'fixed', value: 50000, label: 'Giảm 50.000đ', minOrder: 200000 },
+            FREESHIP: { type: 'fixed', value: 30000, label: 'Ưu đãi 30.000đ', minOrder: 100000 }
         };
         let appliedCoupon = null;
 
         const recipes = {
-            'thit-kho-tau': {
-                title: 'Thịt kho tàu đậm vị với nước màu DH Foods',
-                img: 'http://static.photos/food/640x360/12',
+            'canh-ga-chien': {
+                title: 'Cánh gà chiên bơ tỏi thơm lừng với Tỏi Bột DH Foods',
+                img: 'https://www.dhfoods.com.vn/upload/Food-Recipe/Canh-ga-chien/Lam-Canh-Ga-Chien-Bo-Toi-Thanh-Pham.png',
+                badge: 'Món phụ',
+                time: '40 phút',
+                intro: 'Cánh gà chiên bơ tỏi: ngoài giòn, trong mềm, áo lớp sốt bơ tỏi béo thơm, dậy vị cực cuốn.',
+                ingredients: [
+                    '500g cánh gà',
+                    '1 muỗng canh Tỏi Bột DH Foods',
+                    '1 muỗng cà phê Ớt Bột Hàn Quốc DH Foods',
+                    '1 muỗng cà phê muối',
+                    '1 muỗng cà phê đường',
+                    '2 muỗng canh bột mì',
+                    '1 muỗng canh bơ'
+                ],
+                steps: [
+                    'Rửa sạch cánh gà, khứa nhẹ để dễ thấm gia vị.',
+                    'Ướp gà với Tỏi Bột DH Foods, Ớt Bột Hàn Quốc, muối, đường và bột mì.',
+                    'Trộn đều, để thấm 15-20 phút.',
+                    'Cho gà vào nồi chiên không dầu, chiên ở 180°C khoảng 25-30 phút, trở mặt 2-3 lần để vàng đều.',
+                    'Đun chảy bơ, phi thơm tỏi, cho gà vào đảo đều để áo lớp bơ tỏi.'
+                ],
+                tips: 'Ướp với Tỏi Bột DH Foods giúp gà dậy mùi thơm đều, không bị cháy như tỏi tươi khi chiên.'
+            },
+            'tom-sot-trung-muoi': {
+                title: 'Tôm sốt trứng muối béo ngậy với Xốt Trứng Muối DH Foods',
+                img: 'https://cdn.shopify.com/s/files/1/0617/2497/files/tom-sot-trung-muoi.jpg',
                 badge: 'Món chính',
-                time: '30 phút',
-                intro: 'Thịt kho tàu chuẩn vị: thịt mềm, trứng thấm, nước màu sóng sánh và dậy mùi thơm.',
+                time: '35 phút',
+                intro: 'Tôm sốt trứng muối: tôm săn chắc, áo lớp sốt béo mặn, thơm ngậy “ăn là ghiền”.',
                 ingredients: [
-                    '500g thịt ba chỉ',
-                    '4 quả trứng gà/ trứng vịt',
-                    '2 muỗng canh nước màu DH Foods',
-                    '2 muỗng canh nước mắm',
-                    '1 muỗng canh đường (hoặc đường thốt nốt)',
-                    'Hành tím, tỏi băm, tiêu, ớt (tùy chọn)',
-                    'Nước dừa tươi hoặc nước lọc'
+                    '350g tôm',
+                    '1-2 tép tỏi',
+                    'Bắp (tùy thích)',
+                    'Ngò rí (tùy thích)',
+                    'Bánh mì ăn kèm',
+                    'Xốt Trứng Muối DH Foods'
                 ],
                 steps: [
-                    'Luộc trứng, bóc vỏ. Thịt cắt miếng vừa ăn, chần sơ cho sạch bọt.',
-                    'Phi thơm hành tỏi, cho thịt vào đảo săn.',
-                    'Nêm nước mắm + đường + tiêu. Cho nước màu DH Foods vào để lên màu đẹp.',
-                    'Đổ nước dừa/nước lọc xâm xấp, kho lửa nhỏ 20–30 phút.',
-                    'Cho trứng vào kho thêm 10 phút cho thấm. Nêm nếm lại rồi tắt bếp.'
+                    'Tôm cắt râu, rửa sạch, có thể bóc vỏ hoặc để nguyên.',
+                    'Tỏi băm nhuyễn, bắp rửa sạch.',
+                    'Phi thơm tỏi, cho tôm vào đảo đều trên lửa vừa đến khi vừa chín tới.',
+                    'Cho Xốt Trứng Muối DH Foods vào, hạ lửa nhỏ và đảo đều để sốt sánh lại, áo đều quanh tôm.'
                 ],
-                tips: 'Kho lửa nhỏ để thịt mềm và nước kho trong, màu lên đẹp tự nhiên.'
+                tips: 'Không xào tôm quá lâu để giữ độ ngọt và độ săn chắc tự nhiên.'
             },
-            'bun-bo-hue': {
-                title: 'Bún bò Huế chuẩn vị với sả và ớt DH Foods',
-                img: 'http://static.photos/food/640x360/22',
-                badge: 'Món nước',
+            'canh-chua': {
+                title: 'Canh chua cá lóc chuẩn vị miền Tây với Xốt Gia Vị Hoàn Chỉnh DH Foods',
+                img: 'https://cdn.hstatic.net/products/200000935481/canh-chua_e15777bbae824b3b9b803cdba64b1ef2.png',
+                badge: 'Món canh',
+                time: '25 phút',
+                intro: 'Canh chua cá lóc: chua thanh, cá ngọt mềm, rau giòn mát - chuẩn vị, dễ nấu, cực bắt cơm.',
+                ingredients: [
+                    '500g cá lóc',
+                    '6 trái đậu bắp',
+                    '2 trái cà chua',
+                    '2 cây dọc mùng (bạc hà)',
+                    '1/4 trái thơm',
+                    '100g giá đỗ',
+                    'Ngò gai, rau om',
+                    'Hành tím, tỏi, ớt (tùy thích)',
+                    'Xốt Gia Vị Hoàn Chỉnh Canh Chua DH Foods'
+                ],
+                steps: [
+                    'Cá lóc làm sạch, cắt khúc, rửa với nước muối loãng để khử mùi tanh.',
+                    'Sơ chế rau: cà chua bổ múi, thơm cắt lát, đậu bắp cắt khúc, dọc mùng cắt xéo; rau thơm rửa sạch.',
+                    'Phi thơm hành tỏi, cho cà chua và thơm vào xào sơ.',
+                    'Đổ khoảng 750ml nước, đun sôi rồi cho cá vào nấu 5 phút.',
+                    'Thêm Xốt Gia Vị Hoàn Chỉnh Canh Chua DH Foods, khuấy đều.',
+                    'Cho đậu bắp, dọc mùng, giá đỗ vào nấu chín, cuối cùng thêm rau om, ngò gai và ớt rồi tắt bếp.'
+                ],
+                tips: 'Chỉ cần 1 gói Xốt Gia Vị Hoàn Chỉnh DH Foods là canh đã đậm đà, không cần nêm thêm gia vị.'
+            },
+            'ga-nuong': {
+                title: 'Gà nướng tiêu đen đậm đà với Xốt tiêu đen DH Foods',
+                img: 'https://www.dhfoods.com.vn/upload/Food-Recipe/GA-NUONG-TIEU-DEN/3-Ga-Nuong-Tieu-Den.webp',
+                badge: 'Món nướng',
+                time: '60 phút',
+                intro: 'Gà nướng tiêu đen: lớp da vàng giòn, thịt mềm ẩm, vị cay nhẹ của tiêu đen lan tỏa, ăn cực bắt vị.',
+                ingredients: [
+                    '400-500g đùi gà',
+                    '2-3 muỗng canh xốt tiêu đen DH Foods',
+                    '1 muỗng canh Tỏi Bột DH Foods',
+                    'Rau ăn kèm',
+                ],
+                steps: [
+                    'Rửa sạch gà với muối, để ráo, khứa vài đường trên thịt.',
+                    'Ướp gà với xốt tiêu đen và Tỏi Bột DH Foods, để 30-60 phút cho thấm.',
+                    'Làm nóng nồi chiên không dầu ở 180°C trong 5 phút.',
+                    'Nướng gà 15 phút, lật mặt, nướng thêm 5-10 phút đến khi vàng đều.',
+                    'Có thể quét thêm xốt trong lúc nướng để tăng độ đậm vị.'
+                ],
+                tips: 'Quét xốt nhiều lần khi nướng giúp gà lên màu đẹp và giữ được độ ẩm bên trong.'
+            },
+            'ca-loc': {
+                title: 'Cá lóc kho tiêu đậm vị với Xốt gia vị hoàn chỉnh DH Foods',
+                img: 'https://www.dhfoods.com.vn/upload/Food-Recipe/Ca-Loc-Kho-Tieu/4-Ca-Loc-Kho-Tieu.webp',
+                badge: 'Món chính',
                 time: '45 phút',
-                intro: 'Nước dùng thơm sả, cay nhẹ, đậm đà chuẩn vị Huế — ăn kèm bún, rau sống.',
+                intro: 'Cá lóc kho tiêu: thịt cá săn chắc, thấm đều gia vị, nước kho sánh nhẹ, đậm đà, ăn rất hao cơm.',
                 ingredients: [
-                    '500g bắp bò / giò heo (tùy chọn)',
-                    'Sả cây (đập dập), hành tím, gừng',
-                    'Gia vị: muối, đường, nước mắm',
-                    'Ớt, sa tế (tùy chọn)',
-                    'Bún tươi, rau sống ăn kèm'
+                    '500g cá lóc',
+                    '1 gói xốt gia vị hoàn chỉnh kho thịt cá DH Foods',
+                    'Hành tím, tỏi, hành lá, ớt (tuỳ thích)',
                 ],
                 steps: [
-                    'Trụng thịt/giò, rửa sạch. Cho vào nồi nước mới cùng sả, gừng, hành để ninh.',
-                    'Nêm muối/đường vừa phải, vớt bọt để nước trong.',
-                    'Thêm sa tế/ớt tùy khẩu vị. Nêm nước mắm ở cuối để dậy mùi.',
-                    'Chần bún, xếp thịt, chan nước dùng nóng, ăn kèm rau.'
+                    'Cá lóc làm sạch, rửa với muối để khử tanh, cắt khúc vừa ăn.',
+                    'Ướp cá với xốt gia vị trong 30-60 phút.',
+                    'Phi thơm hành, tỏi với ít dầu, cho cá vào đảo nhẹ cho săn mặt.',
+                    'Thêm nước xâm xấp, đun sôi rồi hạ lửa nhỏ, kho đến khi nước sệt lại.',
+                    'Nêm thêm tiêu, ớt và rắc hành lá trước khi tắt bếp.'
                 ],
-                tips: 'Nêm nước mắm ở cuối và giữ lửa nhỏ để nước dùng thơm, không bị gắt.'
+                tips: 'Kho lửa nhỏ liu riu giúp cá thấm vị sâu và không bị nát.'
             },
-            'suon-nuong-mat-ong': {
-                title: 'Sườn nướng mật ong với gia vị tẩm ướp DH Foods',
-                img: 'http://static.photos/food/640x360/32',
-                badge: 'Nướng',
-                time: '20 phút',
-                intro: 'Sườn mềm, bóng bẩy, thơm mật ong và gia vị — nướng lên là “tỏa mùi” cực hấp dẫn.',
+            'dui-ga-nuong': {
+                title: 'Đùi gà nướng muối ớt cay nồng với Xốt DH Foods',
+                img: 'https://dhfoods.com.vn/upload/Food-Recipe/Dui-Ga-Nuong-Muoi-Ot/Bia-Dui-Ga-Nuong-Muoi-Ot.webp',
+                badge: 'Món nướng',
+                time: '60 phút',
+                intro: 'Đùi gà nướng muối ớt: lớp da giòn rụm, cay nhẹ hấp dẫn, thịt bên trong mềm mọng, ăn kèm rau rất hài hòa.',
                 ingredients: [
-                    '500g sườn heo',
-                    '1–2 muỗng canh mật ong',
-                    'Gia vị tẩm ướp DH Foods (hoặc hỗn hợp tỏi, tiêu, nước mắm)',
-                    'Dầu ăn, ớt bột (tùy chọn)'
+                    '500g đùi gà',
+                    '1 gói xốt gia vị hoàn chỉnh nướng muối ớt DH Foods',
+                    'Rau ăn kèm (xà lách, dưa leo, cà rốt…)'
                 ],
                 steps: [
-                    'Ướp sườn với gia vị + mật ong + chút dầu ăn, để ít nhất 30 phút.',
-                    'Làm nóng lò/nồi chiên, nướng 180–200°C trong 15–20 phút.',
-                    'Trở mặt 1–2 lần, quét thêm lớp sốt ướp để sườn bóng đẹp.',
-                    'Cắt miếng, rắc tiêu và dùng nóng.'
+                    'Rửa sạch gà với muối hoặc giấm, để ráo, khứa vài đường trên thịt.',
+                    'Ướp gà với xốt gia vị, xoa đều và để 30-60 phút.',
+                    'Làm nóng nồi chiên không dầu ở 180°C trong 5 phút.',
+                    'Nướng 15 phút, lật mặt, quét thêm xốt và nướng tiếp 10–15 phút đến khi vàng giòn.'
                 ],
-                tips: 'Quét mật ong ở 5 phút cuối để tránh cháy và lên màu đẹp.'
-            }
+                tips: 'Quét thêm xốt ở lần nướng sau giúp gà đậm vị hơn và có màu đẹp mắt.'
+            },
+            'thit-xien-nuong': {
+                title: 'Thịt xiên nướng ngũ vị thơm lừng với Xốt DH Foods',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dFxVLB7H6x3uS4xZtlr0AF6XGlWRnkKQxA&s',
+                badge: 'Món nướng',
+                time: '50 phút',
+                intro: 'Thịt xiên nướng ngũ vị: thịt mềm mọng, thơm mùi gia vị đặc trưng, vị mặn ngọt hài hòa, màu sắc hấp dẫn.',
+                ingredients: [
+                    '400g thịt heo (nạc vai hoặc ba rọi)',
+                    '1 gói xốt gia vị hoàn chỉnh nướng ngũ vị DH Foods',
+                    'Ớt chuông, rau ăn kèm (tuỳ thích)',
+                    'Que xiên tre'
+                ],
+                steps: [
+                    'Thịt rửa sạch, để ráo, cắt miếng vừa ăn. Que xiên trụng nước sôi.',
+                    'Ướp thịt với xốt gia vị trong 30-60 phút cho thấm.',
+                    'Xiên thịt xen kẽ với ớt chuông hoặc rau củ.',
+                    'Nướng trên bếp than 20-30 phút (trở đều) hoặc nồi chiên/lò nướng ở 200°C khoảng 20 phút.'
+                ],
+                tips: 'Chọn thịt có chút mỡ (nạc vai/ba rọi) giúp xiên nướng không bị khô, ăn mềm và béo hơn.'
+            },
         };
 
         // ============================
@@ -1300,13 +1499,37 @@
             renderProducts(currentFilter);
         }
 
+        /** Khi xem "Tất cả": xen kẽ từng danh mục (round-robin) thay vì ghép khối theo thứ tự trong mảng */
+        const CATEGORY_DISPLAY_ORDER = ['muoi-cham', 'xot-cham', 'gia-vi-tu-nhien', 'gia-vi-hoan-chinh', 'gia-vi-nau-uop', 'sa-te'];
+        function interleaveProductsByCategory(list) {
+            const buckets = new Map();
+            list.forEach(p => {
+                if (!buckets.has(p.category)) buckets.set(p.category, []);
+                buckets.get(p.category).push(p);
+            });
+            const order = [...CATEGORY_DISPLAY_ORDER];
+            buckets.forEach((_, cat) => {
+                if (!order.includes(cat)) order.push(cat);
+            });
+            const out = [];
+            let remaining = list.length;
+            while (remaining > 0) {
+                for (const cat of order) {
+                    const b = buckets.get(cat);
+                    if (b && b.length) {
+                        out.push(b.shift());
+                        remaining--;
+                    }
+                }
+            }
+            return out;
+        }
+
         function renderProducts(filter = 'all') {
             const grid = document.getElementById('products-grid');
             let filtered = products;
             
-            if (filter === 'bestseller' || filter === 'new' || filter === 'sale') {
-                filtered = products.filter(p => p.tag === filter);
-            } else if (filter !== 'all') {
+            if (filter !== 'all') {
                 filtered = products.filter(p => p.category === filter);
             }
 
@@ -1319,26 +1542,31 @@
                 });
             }
 
+            if (filter === 'all') {
+                filtered = interleaveProductsByCategory(filtered);
+            }
+
             const visibleProducts = filtered.slice(0, productsVisibleCount);
 
             grid.innerHTML = visibleProducts.map(p => {
                 const discount = p.oldPrice ? Math.round((1 - p.price / p.oldPrice) * 100) : 0;
-                const badgeColors = {
-                    'sale': 'bg-red-500',
-                    'bestseller': 'bg-forest-600',
-                    'new': 'bg-primary-500'
-                };
-                const badgeTexts = {
-                    'sale': `-${discount}%`,
-                    'bestseller': 'Bán chạy',
-                    'new': 'Mới'
-                };
+                const extraBadgeClass = p.extraBadge === 'bestseller' ? 'bg-forest-600' : 'bg-primary-500';
+                const extraBadgeText = p.extraBadge === 'bestseller' ? 'Bán chạy' : p.extraBadge === 'new' ? 'Mới' : '';
+                const saleBadge = p.oldPrice
+                    ? `<span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">-${discount}%</span>`
+                    : '';
+                const extraBadgeHtml = p.extraBadge
+                    ? `<span class="${extraBadgeClass} text-white text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">${extraBadgeText}</span>`
+                    : '';
 
                 return `
                     <div class="product-card bg-white rounded-2xl overflow-hidden transition-all duration-300 group fade-in visible" data-tag="${p.tag}" data-category="${p.category}">
                         <div class="relative overflow-hidden">
                             <img src="${p.img}" alt="${p.name}" class="product-img w-full h-48 md:h-56 object-cover transition-transform duration-500">
-                            ${p.badge ? `<span class="absolute top-3 left-3 ${badgeColors[p.badge]} text-white text-xs font-bold px-3 py-1 rounded-full">${badgeTexts[p.badge]}</span>` : ''}
+                            <div class="absolute top-3 left-3 z-10 flex flex-row flex-nowrap items-center gap-1.5 max-w-[calc(100%-1rem)]">
+                                ${saleBadge}
+                                ${extraBadgeHtml}
+                            </div>
                             <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
                                 <button onclick="openQuickView(${p.id})"
                                     class="w-10 h-10 rounded-full bg-white/90 hover:bg-white flex items-center justify-center text-gray-700 hover:text-primary-600 transition-colors shadow-lg"
@@ -1520,10 +1748,12 @@
 
         function getCartDiscount(subtotal) {
             if (!appliedCoupon || subtotal <= 0) return 0;
-            if (appliedCoupon.type === 'percent') {
-                return Math.round(subtotal * appliedCoupon.value / 100);
+            const c = appliedCoupon;
+            if (c.minOrder && subtotal < c.minOrder) return 0;
+            if (c.type === 'percent') {
+                return Math.round(subtotal * c.value / 100);
             }
-            return Math.min(appliedCoupon.value, subtotal);
+            return Math.min(c.value, subtotal);
         }
 
         function updateCouponMessage(message = '', type = 'info') {
@@ -1568,15 +1798,50 @@
                 return;
             }
 
+            const subtotal = getCartSubtotal();
+
+            if (coupon.minOrder && subtotal < coupon.minOrder) {
+                appliedCoupon = null;
+                updateCouponMessage(
+                    `Mã ${code} chỉ dùng khi tổng đơn từ ${formatPrice(coupon.minOrder)} trở lên. Giỏ hiện tại: ${formatPrice(subtotal)}.`,
+                    'error'
+                );
+                updateCartUI();
+                return;
+            }
+
             appliedCoupon = { code, ...coupon };
             input.value = code;
-            updateCouponMessage(`Đã áp dụng ${code} - ${coupon.label}.`, 'success');
+
+            if (coupon.type === 'fixed' && subtotal < coupon.value) {
+                const d = Math.min(coupon.value, subtotal);
+                updateCouponMessage(
+                    `Đã áp dụng ${code}. Giảm ${formatPrice(d)} (giá trị giỏ ${formatPrice(subtotal)} thấp hơn mức ưu đãi ${formatPrice(coupon.value)} — chỉ trừ tối đa theo tổng đơn).`,
+                    'info'
+                );
+            } else {
+                updateCouponMessage(`Đã áp dụng ${code} - ${coupon.label}.`, 'success');
+            }
             updateCartUI();
         }
 
         function updateCartUI() {
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             const subtotal = getCartSubtotal();
+
+            if (!cart.length) {
+                appliedCoupon = null;
+                updateCouponMessage();
+            } else if (appliedCoupon && appliedCoupon.minOrder && subtotal < appliedCoupon.minOrder) {
+                const code = appliedCoupon.code;
+                const min = appliedCoupon.minOrder;
+                appliedCoupon = null;
+                updateCouponMessage(
+                    `Mã ${code} cần tổng đơn từ ${formatPrice(min)}. Đã gỡ mã (giỏ hiện ${formatPrice(subtotal)}).`,
+                    'error'
+                );
+            }
+
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             const discount = getCartDiscount(subtotal);
             const totalPrice = Math.max(0, subtotal - discount);
 
@@ -1667,6 +1932,7 @@
         }
 
         function openCheckout() {
+            updateCartUI();
             const subtotal = getCartSubtotal();
             if (!subtotal) {
                 showToast('Giỏ hàng đang trống, hãy thêm sản phẩm trước nhé!');
@@ -1695,6 +1961,7 @@
 
         function submitCheckoutInfo(e) {
             e.preventDefault();
+            updateCartUI();
             const name = document.getElementById('checkout-name').value.trim();
             const phone = document.getElementById('checkout-phone').value.trim();
             const address = document.getElementById('checkout-address').value.trim();
@@ -1741,28 +2008,23 @@
             const modal = document.getElementById('quick-view-modal');
             const inner = document.getElementById('modal-content-inner');
 
-            const tagLabel = product.badge === 'sale'
-                ? 'Sale'
-                : product.badge === 'bestseller'
-                    ? 'Hot'
-                    : product.badge === 'new'
-                        ? 'New'
-                        : 'DH Foods';
-
-            const tagClass = tagLabel === 'Hot'
-                ? 'bg-gradient-to-r from-orange-400 to-red-500'
-                : tagLabel === 'Sale'
-                    ? 'bg-gradient-to-r from-primary-500 to-orange-500'
-                    : tagLabel === 'New'
-                        ? 'bg-gradient-to-r from-green-400 to-emerald-500'
-                        : 'bg-gradient-to-r from-forest-600 to-forest-700';
-
             const original = product.oldPrice ?? null;
             const discountPct = original ? Math.round((1 - product.price / original) * 100) : 0;
+            const saleBadgeHeader = original
+                ? `<span class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-red-500 to-orange-500 shadow-sm">-${discountPct}%</span>`
+                : '';
+            const extraBadgeHeader = product.extraBadge === 'bestseller'
+                ? `<span class="px-3 py-1 rounded-full text-xs font-bold text-white bg-forest-600 shadow-sm">Bán chạy</span>`
+                : product.extraBadge === 'new'
+                    ? `<span class="px-3 py-1 rounded-full text-xs font-bold text-white bg-primary-500 shadow-sm">Mới</span>`
+                    : '';
+            const headerBadges = (saleBadgeHeader || extraBadgeHeader)
+                ? `<div class="flex flex-row flex-nowrap items-center gap-2">${saleBadgeHeader}${extraBadgeHeader}</div>`
+                : `<span class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-forest-600 to-forest-700">DH Foods</span>`;
 
             inner.innerHTML = `
-                <div class="flex justify-between items-start mb-4">
-                    <span class="px-3 py-1 rounded-full text-xs font-bold text-white ${tagClass}">${tagLabel}</span>
+                <div class="flex justify-between items-start mb-4 gap-3">
+                    ${headerBadges}
                     <button onclick="closeQuickView()" class="p-2 rounded-full hover:bg-primary-100 text-gray-500 hover:text-primary-600 transition">
                         <i data-lucide="x" class="w-5 h-5"></i>
                     </button>
@@ -1923,27 +2185,52 @@
         // ============================
         // Counter Animation
         // ============================
+        function renderCounterEl(el, value, suffix, showPlus) {
+            el.replaceChildren();
+            el.appendChild(document.createTextNode(String(value) + (suffix || '')));
+            if (showPlus) {
+                const plus = document.createElement('span');
+                plus.className = 'stat-plus';
+                plus.setAttribute('aria-hidden', 'true');
+                plus.textContent = '+';
+                el.appendChild(plus);
+            }
+        }
+
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
-                    const target = parseInt(el.dataset.count);
-                    if (target) {
-                        let current = 0;
-                        const step = Math.max(1, Math.floor(target / 40));
-                        const timer = setInterval(() => {
-                            current += step;
-                            if (current >= target) {
-                                current = target;
-                                clearInterval(timer);
-                            }
-                            el.textContent = current + (target >= 100 ? '+' : '+');
-                        }, 40);
+                    const raw = el.getAttribute('data-count');
+                    const target = parseInt(raw, 10);
+                    if (!Number.isFinite(target)) {
+                        counterObserver.unobserve(el);
+                        return;
                     }
+                    const suffix = el.getAttribute('data-suffix') || '';
+                    const plusAttr = el.getAttribute('data-show-plus');
+                    const showPlus = plusAttr !== null && plusAttr !== 'false';
+                    const useRich = suffix !== '' || showPlus;
+                    let current = 0;
+                    const step = Math.max(1, Math.floor(target / 40));
+                    const tick = () => {
+                        current += step;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        if (useRich) {
+                            renderCounterEl(el, current, suffix, showPlus);
+                        } else {
+                            el.textContent = String(current);
+                        }
+                    };
+                    const timer = setInterval(tick, 40);
+                    tick();
                     counterObserver.unobserve(el);
                 }
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.35 });
 
         document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
 
